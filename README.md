@@ -45,6 +45,6 @@ $ NPM_CONFIG_OTP=123456 npm run publish
 ## Gotchas
 
  * This setup hoists dependencies to the root. Sometimes you can end up with modules using a dep that isn't in their `package.json`, which works until you publish it and everything explodes at runtime.  You have three options:
-  1. [Turn off hoisting](https://github.com/achingbrain/mono-repo-bootstrap/blob/master/lerna.json#L9) (slows everything down, not recommended)
-  1. Use [`dependency-check`](https://www.npmjs.com/package/dependency-check) in a linting step.
-  1. Configure your ci to test your modules independently
+    1. [Turn off hoisting](https://github.com/achingbrain/mono-repo-bootstrap/blob/master/lerna.json#L9) (slows everything down, not recommended)
+    1. Use [`dependency-check`](https://www.npmjs.com/package/dependency-check) in a linting step.
+    1. Configure your ci to test your modules independently
