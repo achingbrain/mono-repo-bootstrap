@@ -1,0 +1,21 @@
+{
+  "name": "mono-repo-bootstrap",
+  "version": "1.0.0",
+  "description": "Your project description here",
+  "scripts": {
+    "postinstall": "lerna bootstrap --ci",
+    "reset": "lerna run --parallel clean && rm -rf packages/*/node_modules packages/*/package-lock.json && rm -rf node_modules package-lock.json && npm i --ignore-scripts && lerna bootstrap",
+    "test": "lerna run --parallel test",
+    "test:node": "lerna run --parallel test",
+    "coverage": "lerna run --parallel coverage",
+    "build": "lerna run --parallel build",
+    "deploy": "lerna run --parallel deploy",
+    "start": "NODE_ENV=development lerna run --parallel start",
+    "clean": "lerna run --parallel clean",
+    "lint": "lerna run --parallel lint",
+    "publish": "lerna publish"
+  },
+  "devDependencies": {
+    "lerna": "^3.1.4"
+  }
+}
