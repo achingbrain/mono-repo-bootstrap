@@ -7,7 +7,6 @@ $ git clone https://github.com/achingbrain/mono-repo-bootstrap.git
 $ mv mono-repo-bootstrap my-project-name
 $ cd my-project-name
 $ rm -rf .git # this is your project now
-$ mkdir packages # your packages will go here
 $ cd packages
 $ git clone ... # clone your various repos
 $ cd ../
