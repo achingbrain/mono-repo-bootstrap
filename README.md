@@ -22,7 +22,7 @@ If you add a dependency to a package, you need to re-bootstrap and crosslink:
 
 ```console
 $ # in the mono-repo root
-$ npm run reset
+$ npm run reset && npm i
 ```
 
 ## Publshing modules
